@@ -55,7 +55,6 @@ function AITool() {
   const [loading, setLoading] = useState(false);
   const [copied, setCopied] = useState(false);
   const [error, setError] = useState(null);
-  const [selectedTemplate, setSelectedTemplate] = useState(null);
   const [history, setHistory] = useState([]);
   const [showHistory, setShowHistory] = useState(false);
   const [savedIdeas, setSavedIdeas] = useState([]);
@@ -115,7 +114,6 @@ function AITool() {
   };
 
   const applyTemplate = (template) => {
-    setSelectedTemplate(template);
     setInput(template.prompt + " ");
   };
 
