@@ -133,7 +133,8 @@ function AITool() {
     setOutput("");
 
     try {
-      const res = await fetch(`http://127.0.0.1:8000/generate?query=${encodeURIComponent(input.trim())}`);
+      const apiUrl = import.meta.env.VITE_API_URL || 'http://localhost:8000';
+      const res = await fetch(`${apiUrl}/generate?query=${encodeURIComponent(input.trim())}`);
       const data = await res.json();
 
       if (!res.ok) {
