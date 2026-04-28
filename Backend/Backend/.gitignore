@@ -43,19 +43,6 @@ htmlcov/
 nosetests.xml
 coverage.xml
 *.cover
-*.log
-.git
-.mypy_cache
-.pytest_cache
-.hypothesis
-.env
-.env.local
-.env.production
-.DS_Store
-.cache
-nosetests.xml
-coverage.xml
-*.cover
 .hypothesis/
 .pytest_cache/
 
@@ -120,20 +107,12 @@ venv.bak/
 .mypy_cache/
 .dmypy.json
 dmypy.json
-=======
-# Virtual environments
-.venv/
-venv/
-ENV/
-env/
->>>>>>> 49106d9b3a95a5b626d9d43d049c5cc0298ffe99
 
 # IDE
 .vscode/
 .idea/
 *.swp
 *.swo
-<<<<<<< HEAD
 *~
 
 # OS
@@ -144,30 +123,3 @@ env/
 .Trashes
 ehthumbs.db
 Thumbs.db
-=======
-
-# OS
-.DS_Store
-Thumbs.db
-
-# Node.js
-node_modules/
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-
-# Environment variables
-.env
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
-
-# Logs
-logs/
-*.log
-
-# Frontend build
-build/
-dist/
->>>>>>> 49106d9b3a95a5b626d9d43d049c5cc0298ffe99
