@@ -4,7 +4,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from groq import Groq
 
 
-def load_env_file(path: str = "Backend/.env") -> None:
+def load_env_file(path: str = ".env") -> None:
     if not os.path.exists(path):
         return
 
@@ -20,9 +20,9 @@ app = FastAPI()
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # Allow all origins for now - update with your frontend URL in production
+    allow_origins=["*"],
     allow_credentials=True,
-    allow_methods=["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+    allow_methods=["*"],
     allow_headers=["*"],
 )
 
